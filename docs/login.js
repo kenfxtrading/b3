@@ -3,7 +3,7 @@ import { h, patch } from "./lib/superfine/src/index.js";
 const main = () => {
     const topNodeTL = T(self => self.now =
         h("div", null,
-            h("h2", { class: "mdc-typography--headline2" }, "superuser.tokyo"),
+            h("h2", { class: "mdc-typography--headline2" }, "endkicker.tech login"),
             h("div", { class: "main" },
                 h("div", { class: "mdc-layout-grid login-box mdc-elevation--z6" },
                     h("h1", null, "Login"),
@@ -32,11 +32,11 @@ const main = () => {
         Array.from(document
             .querySelectorAll('.mdc-text-field'))
             .map(textField => window.mdc.textField
-            .MDCTextField.attachTo(textField));
+                .MDCTextField.attachTo(textField));
         Array.from(document
             .querySelectorAll('.mdc-button'))
             .map(button => window.mdc.ripple
-            .MDCRipple.attachTo(button));
+                .MDCRipple.attachTo(button));
     });
     world.now = topNodeTL;
 };
